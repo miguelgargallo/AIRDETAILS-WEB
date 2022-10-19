@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEFER9ZCKT"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
