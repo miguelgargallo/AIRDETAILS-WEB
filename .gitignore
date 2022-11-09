@@ -5,6 +5,17 @@
 /.pnp
 .pnp.js
 
+# resources
+.past
+/.past
+.vscode
+/.vscode
+
+# database
+/db
+.db
+/.db
+
 # testing
 /coverage
 
@@ -34,3 +45,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
