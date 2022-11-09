@@ -132,7 +132,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://github.com/miguelgargallo/AIRDETAILS-WEB"
+          href="https://github.com/itamaesanorg/AIRDETAILS-WEB"
           target="_blank"
           rel="noopener noreferrer"
         >
