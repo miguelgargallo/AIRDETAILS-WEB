@@ -1,16 +1,30 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-DEFER9ZCKT"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-DEFER9ZCKT");
+		</script>
 		<BaseHead title={title} description={description} />
 		<style>
 			.title {
@@ -28,7 +42,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+				{
+					heroImage && (
+						<img width={720} height={360} src={heroImage} alt="" />
+					)
+				}
 				<h1 class="title">{title}</h1>
 				{pubDate && <time>{pubDate}</time>}
 				{
