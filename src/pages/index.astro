@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import "../styles/index.css";
+---
+
+<Layout title="Benvinguts a Adus Music.">
+	<main>
+		<h1>
+			Welcome to <span class="text-gradient"
+				><a
+					href="https://instagram.com/miguelgargallo.es"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					AirDetails!
+				</a>
+			</span>
+		</h1>
+		<p class="instructions">
+			<strong> Miguel Gargallo, photographer and drone pilot.</strong>
+			Get started by knowing our <code>VIP Events</code>, press events and
+			Tesla Motors collaboration.<br />
+		</p>
+		<h2>Precedents</h2>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://express.adobe.com/page/sTLdQH7sQVsgb/index.html"
+				title="VIP Galas"
+				body="Premios ESLAND, IBAI, El Xokas, IlloJuan, Jordi Wild, Jagger ... The Grefg!"
+			/>
+			<Card
+				href="https://express.adobe.com/page/OopViOPVJhVgV/index.html"
+				title="Professional Sports"
+				body="FC Barcelona, Barça, Barça B, Femeni, Basquet, Events Burocratics i Hockey."
+			/>
+			<Card
+				href="https://express.adobe.com/page/t6UQMW9VDePJP/index.html"
+				title="Drone Pilot"
+				body="Mavic 2 Pro built in Hasselblad camera shootings sessions."
+			/>
+			<Card
+				href="https://express.adobe.com/page/podDpYbThdPUR/index.html"
+				title="RACING"
+				body="Tesla Motors collab, Model X, Barcelona EXPO."
+			/>
+			<Card
+				href="https://mailto:miguelgargalloes@gmail.com"
+				title="Send me Mail!"
+				body="Contact me for any kind of event or project."
+			/>
+			<Card
+				href="https://twitter.com/miguelgargallo"
+				title="DM on Twitter now"
+				body="Send me a DM on Twitter for any kind of event or dev project."
+			/>
+		</ul>
+		<h2>More about the Photographer</h2>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://instagram.com/miguelgargallo.es"
+				title="Social Instagram"
+				body="Follow me on Instagram for more content."
+			/>
+			<Card
+				href="https://miguelgargallo.com"
+				title="Read my blog"
+				body="See my Github profile for more info."
+			/>
+		</ul>
+	</main>
+</Layout>
